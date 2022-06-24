@@ -1,0 +1,126 @@
+.sl-container {
+	width: 100%;
+	height: 500px;
+	margin: 20px 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #000;
+	position: relative;
+}
+.swipe {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #eee;
+	overflow: hidden;
+}
+.panel {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	padding: 20px;
+}
+.left {
+	left: -100%;
+}
+.right {
+	left: 100%;
+}
+.sl-info {
+	position: absolute;
+	width: 70%;
+	max-width: 500px;
+	bottom: 15%;
+	right: 5%;
+	pointer-events: none;
+}
+.inner {
+	position: relative;
+	padding: 0.5em 2em 1em;
+	background: #FFFFFF;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.inner h3 {
+	font-size: 1.7em;
+	font-weight: normal;
+	color: #337AB7;
+}
+.inner p {
+	font-family: Verdana, sans-serif;
+}
+.sl-info:before {
+	content: "";
+	position: absolute;
+	width: 65%;
+	height: 80%;
+	top: 0;
+	left: 0;
+	transform: translate(-10px, -10px);
+	background: #337AB7;
+}
+.sl-buttons {
+	position: absolute;
+	bottom: -50px;
+	right: 5%;
+	pointer-events: all;
+}
+.sl-buttons button {
+	transition: ease .4s;
+}
+.sl-buttons button svg {
+	margin: 10px 0;
+}
+.sl-buttons .btn-prev,
+.sl-buttons .btn-next {
+	width: 60px;
+	height: 60px;
+	margin-left: 10px;
+	border: 2px solid #337AB7;
+	outline: none;
+	border-radius: 60px;
+	color: #FFFFFF;
+	background: #337AB7;
+	box-shadow: 0px 3px 15px 2px rgba(0,0,0,.5);
+	cursor: pointer;
+}
+.sl-buttons button:hover {
+	box-shadow: 0px 3px 30px 3px rgba(0,0,0,.5);
+}
+.sl-buttons button:disabled {
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,.5);
+	background: #BFE2FF;
+	cursor: default;
+}
+.optional {
+	width: 80%;
+	max-width: 680px;
+	margin: 6em auto;
+	padding: 2em 3em;
+	box-shadow:
+    0 3px 12px rgba(0,0,0,0.16),
+    0 3px 12px rgba(0,0,0,0.23);
+}
+@media (max-width: 620px) {
+	body {
+		font-size: 13px;
+		line-height: 1.5em;
+	}
+	.sl-info {
+		position: absolute;
+		width: 100%;
+		max-width: 100%;
+		bottom: 0;
+		right: 0;
+	}
+	.inner {
+		padding: .5em 1.5em;
+		box-shadow: none;
+	}
+	.sl-buttons {
+		display: none;
+	}
+}
