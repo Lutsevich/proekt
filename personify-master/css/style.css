@@ -340,7 +340,10 @@ aside {
 
 main {
   float: left;
-  padding: 7%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 3.5%;
+  padding-bottom: 4%;
   position: relative;
 }
 
